@@ -27,20 +27,10 @@
             <div class="collapse" id="navbarToggleExternalContent">
                 
                 <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Bela Plus <span class="text-muted">Oficina</span></h5>
+                    <h5 class="text-white h4">Biblioteca para todos <span class="text-muted">Oficina</span></h5>
                     <div>
                         <a href="?pagina=cadastros" class="linkMenu">
-                            Cadastros
-                        </a>
-                    </div>
-                    <div>
-                        <a href="?pagina=faixas" class="linkMenu">
-                            Faixas
-                        </a>
-                    </div>
-                    <div>
-                        <a href="?pagina=producao" class="linkMenu">
-                            Produção
+                            Cadastrar livro
                         </a>
                     </div>
                     <div>

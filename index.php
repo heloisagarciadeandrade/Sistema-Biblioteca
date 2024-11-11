@@ -21,7 +21,7 @@ if(isset($_SESSION['login'])){
 		$pagina = $_GET['pagina'];
 	}
 	else{
-		$pagina = 'producao';
+		$pagina = 'cadastros';
 	}
 }
 else{
