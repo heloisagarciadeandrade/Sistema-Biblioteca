@@ -1,4 +1,3 @@
-<br>
 <div class="caixa">
     <h4>Cadastro de Livros</h4>
     <br>
@@ -22,7 +21,11 @@
                     echo '<td style="word-wrap: break-word">' . $linha['titulo'] . '</td>';
                     echo '<td style="word-wrap: break-word">' . $linha['autor'] . '</td>';
                     echo '<td style="word-wrap: break-word">' . $linha['genero'] . '</td>';
-                    echo '<td style="word-wrap: break-word">' . $linha['status_disponibilidade'] . '</td>';
+                    
+                    // Verifica o status e exibe corretamente
+                    $status = $linha['status_disponibilidade'] == 'Disponível' ? 'Disponível' : 'Indisponível';
+                    echo '<td style="word-wrap: break-word">' . $status . '</td>';
+
                     echo '<td>
                     <div class="row">
                         <div class="col-6">
