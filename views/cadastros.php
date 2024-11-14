@@ -1,15 +1,15 @@
 <div class="caixa">
-    <h4>Cadastro de Livros</h4>
+    <h4>Cadastro Paciente</h4>
     <br>
-    <a type="button" class="btn btn-primary" href="?pagina=novoCadastro"><i class="bi bi-plus"></i> Cadastrar Livro</a>
+    <a type="button" class="btn btn-primary" href="?pagina=novoCadastro"><i class="bi bi-plus"></i> Cadastrar Paciente</a>
     <br><br><br>
     <div>
         <table id="table_id" class="cell-border">
             <thead>
                 <tr>
-                    <th>Título</th>
-                    <th>Autor</th>
-                    <th>Gênero</th>
+                    <th>Paciente</th>
+                    <th>Doença</th>
+                    <th>Tratamento </th>
                     <th>Status de Disponibilidade</th>
                     <th>Ações</th>
                 </tr>

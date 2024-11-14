@@ -10,7 +10,7 @@ while ($linha = mysqli_fetch_array($consultaCadastros)) {
 
 <br>
 <div class="caixa">
-    <h4>Editar Cadastro de Livro</h4>
+    <h4>Cadastro doenças crônicas</h4>
     <br>
     <a type="button" class="btn btn-primary" href="?pagina=cadastros"><i class="bi bi-backspace"></i> Voltar</a>
     <br><br><br> 
