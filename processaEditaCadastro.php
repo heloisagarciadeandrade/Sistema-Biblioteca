@@ -4,14 +4,14 @@ include 'db.php';  // Incluindo a conexão com o banco de dados
 
 // Recebe os dados do formulário
 $id = $_POST['id'];
-$titulo = $_POST['titulo'];  // Campo 'titulo'
-$autor = $_POST['autor'];    // Campo 'autor'
-$genero = $_POST['genero'];  // Campo 'genero' - novo campo
+$nome = $_POST['nome'];  // Campo 'nome'
+$doenca = $_POST['doenca'];    // Campo 'doenca'
+$tratamento = $_POST['tratamento'];  // Campo 'tratamento' - novo campo
 $status_disponibilidade = $_POST['status_disponibilidade']; // Campo 'status_disponibilidade' 
 
-// Atualiza o livro na tabela 'livros'
-$query = "UPDATE livros 
-          SET titulo='$titulo', autor='$autor', genero='$genero', status_disponibilidade='$status_disponibilidade' 
+// Atualiza tabela 'pacientes'
+$query = "UPDATE pacientes 
+          SET nome='$nome', doenca='$doenca', tratamento='$tratamento', status_disponibilidade='$status_disponibilidade' 
           WHERE id=$id";
 
 // Executa a consulta

@@ -4,7 +4,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$db = "bibliotecabd";
+$db = "doencasbd";
 
 // Estabelecendo a conexão
 $conexao = mysqli_connect($servidor, $usuario, $senha, $db);
@@ -14,8 +14,8 @@ if (!$conexao) {
     die("Falha na conexão: " . mysqli_connect_error());
 }
 
-// Consulta para obter todos os cadastros de livros, ordenados pelo título
-$query = "SELECT * FROM livros ORDER BY titulo";
+// Consulta para obter todos os cadastros de pacientes, ordenados pelo nome
+$query = "SELECT * FROM pacientes ORDER BY nome";
 $consultaCadastros = mysqli_query($conexao, $query);
 
 // Verifica se a consulta foi bem-sucedida

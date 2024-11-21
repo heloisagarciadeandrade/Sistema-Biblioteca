@@ -18,9 +18,9 @@
                 <?php
                 while ($linha = mysqli_fetch_array($consultaCadastros)) {
                     echo '<tr>';
-                    echo '<td style="word-wrap: break-word">' . $linha['titulo'] . '</td>';
-                    echo '<td style="word-wrap: break-word">' . $linha['autor'] . '</td>';
-                    echo '<td style="word-wrap: break-word">' . $linha['genero'] . '</td>';
+                    echo '<td style="word-wrap: break-word">' . $linha['nome'] . '</td>';
+                    echo '<td style="word-wrap: break-word">' . $linha['doenca'] . '</td>';
+                    echo '<td style="word-wrap: break-word">' . $linha['tratamento'] . '</td>';
                     
                     // Verifica o status e exibe corretamente
                     $status = $linha['status_disponibilidade'] == 'Disponível' ? 'Disponível' : 'Indisponível';

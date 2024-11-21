@@ -7,6 +7,9 @@
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
+CREATE DATABASE doencasbd;
+USE doencasbd;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -17,20 +20,20 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `biblioteca`
+-- Banco de dados: `doencçasbd`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `livros`
+-- Estrutura para tabela `pacientes`
 --
 
-CREATE TABLE `livros` (
+CREATE TABLE `pacientes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(256) NOT NULL,
-  `autor` varchar(256) NOT NULL,
-  `genero` varchar(100) NOT NULL,
+  `nome` varchar(256) NOT NULL,
+  `doenca` varchar(256) NOT NULL,
+  `tratamento` varchar(100) NOT NULL,
   `status_disponibilidade` enum('Disponível', 'Emprestado') DEFAULT 'Disponível',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -61,3 +64,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+SELECT * FROM pacientes;

@@ -6,18 +6,18 @@
     <br><br><br> 
     <form method="post" action="insereCadastro.php" autocomplete="off">
         <div class="mb-3">
-            <label for="titulo" class="form-label">Paciente</label>
-            <input type="text" class="form-control" id="titulo" name="titulo" required>
+            <label for="nome" class="form-label">Paciente</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
         </div>
         
         <div class="mb-3">
-            <label for="autor" class="form-label">Doença</label>
-            <input type="text" class="form-control" id="autor" name="autor" required>
+            <label for="doenca" class="form-label">Doença</label>
+            <input type="text" class="form-control" id="doenca" name="doenca" required>
         </div>
         
         <div class="mb-3">
-            <label for="genero" class="form-label">Tratamento</label>
-            <input type="text" class="form-control" id="genero" name="genero" required>
+            <label for="tratamento" class="form-label">Tratamento</label>
+            <input type="text" class="form-control" id="tratamento" name="tratamento" required>
         </div>
         
         <div class="mb-3">
