@@ -6,7 +6,7 @@
     <br><br><br> 
     <form method="post" action="insereCadastro.php" autocomplete="off">
         <div class="mb-3">
-            <label for="receita" class="form-label">Paciente</label>
+            <label for="receita" class="form-label">Receita</label>
             <input type="text" class="form-control" id="receita" name="receita" required>
         </div>
         
