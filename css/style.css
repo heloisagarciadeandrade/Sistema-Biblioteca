@@ -1,40 +1,90 @@
-.linkMenu{
-    color:#fff;
-    text-decoration: none;
+
+.linkMenu {
+    color: #fff;  
+    text-decoration: none;  
+    font-weight: bold;  
+    transition: color 0.3s ease-in-out; 
 }
 
-th, td, tr{
-    text-align: center;
+.linkMenu:hover {
+    color: #ff66b2;  
 }
+
+th, td, tr {
+    text-align: center;  
+    padding: 12px; 
+    border: 1px solid #ff66b2;  
+}
+
+th {
+    background-color: #ff66b2;  
+    color: #fff;  
+    font-size: 18px;  
+    font-weight: bold;  
+}
+
+td {
+    background-color: #f9f0f5;  
+    color: #333;  
+}
+
+
+.caixa {
+    width: 80%;  
+    margin-left: 10%;  
+    margin-top: 30px;  
+    padding: 20px;  
+    background-color: #fce4ec; 
+    border-radius: 12px;  
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);  
+    transition: transform 0.3s ease; 
+}
+
+.caixa:hover {
+    transform: translateY(-8px);  
+}
+
 
 @media (max-width: 575px) {
-    .caixa{
-        width: 70%;
-        margin-left: 15%;
+    .caixa {
+        width: 90%;  
+        margin-left: 5%;
         margin-top: 20px;
     }
 }
+
+
 @media (min-width: 576px) {
-    .caixa{
-        width: 70%;
+    .caixa {
+        width: 75%;  
+        margin-left: 12.5%;
+        margin-top: 20px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .caixa {
+        width: 70%;  
         margin-left: 15%;
         margin-top: 20px;
     }
 }
-@media (min-width: 768px) {
-    .caixa{
-       /*Idem min576*/
-    }
-}
+
+
 @media (min-width: 992px) {
-    .caixa{
-        width: 60%;
+    .caixa {
+        width: 60%;  
         margin-left: 20%;
         margin-top: 20px;
     }
 }
+
+
 @media (min-width: 1200px) {
-    .caixa{
-        /*Idem min992*/
-     }
+    .caixa {
+        width: 50%;  
+        margin-left: 25%;
+        margin-top: 20px;
+    }
 }

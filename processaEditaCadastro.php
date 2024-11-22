@@ -4,14 +4,15 @@ include 'db.php';  // Incluindo a conexão com o banco de dados
 
 // Recebe os dados do formulário
 $id = $_POST['id'];
-$nome = $_POST['nome'];  // Campo 'nome'
-$doenca = $_POST['doenca'];    // Campo 'doenca'
-$tratamento = $_POST['tratamento'];  // Campo 'tratamento' - novo campo
+$tempo = $_POST['receita'];  // Campo 'tempo'
+$receita = $_POST['receita'];  // Campo 'receita'
+$ingrediente = $_POST['ingrediente$ingrediente'];    // Campo 'ingrediente$ingrediente'
+$modo = $_POST['modo'];  // Campo 'modo' - novo campo
 $status_disponibilidade = $_POST['status_disponibilidade']; // Campo 'status_disponibilidade' 
 
 // Atualiza tabela 'pacientes'
-$query = "UPDATE pacientes 
-          SET nome='$nome', doenca='$doenca', tratamento='$tratamento', status_disponibilidade='$status_disponibilidade' 
+$query = "UPDATE Receita 
+          SET receita='$receita', tempo='$tempo' , ingrediente$ingrediente='$ingrediente', modo='$modo', status_disponibilidade='$status_disponibilidade' 
           WHERE id=$id";
 
 // Executa a consulta

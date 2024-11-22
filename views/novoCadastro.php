@@ -1,32 +1,30 @@
 <br>
 <div class="caixa">
-    <h4>Novo Cadastro de Paciente</h4>
+    <h4>Novo Cadastro de Receitas</h4>
     <br>
     <a type="button" class="btn btn-primary" href="?pagina=cadastros"><i class="bi bi-backspace"></i> Voltar</a>
     <br><br><br> 
     <form method="post" action="insereCadastro.php" autocomplete="off">
         <div class="mb-3">
-            <label for="nome" class="form-label">Paciente</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
+            <label for="receita" class="form-label">Paciente</label>
+            <input type="text" class="form-control" id="receita" name="receita" required>
         </div>
         
         <div class="mb-3">
-            <label for="doenca" class="form-label">Doença</label>
-            <input type="text" class="form-control" id="doenca" name="doenca" required>
+            <label for="ingrediente" class="form-label">Ingredientes</label>
+            <input type="text" class="form-control" id="ingrediente" name="ingrediente" required>
         </div>
         
         <div class="mb-3">
-            <label for="tratamento" class="form-label">Tratamento</label>
-            <input type="text" class="form-control" id="tratamento" name="tratamento" required>
+            <label for="modo" class="form-label">Modo</label>
+            <input type="text" class="form-control" id="modo" name="modo" required>
         </div>
         
         <div class="mb-3">
-            <label for="status_disponibilidade" class="form-label">Medicamento</label>
-            <select class="form-control" id="status_disponibilidade" name="status_disponibilidade" required>
-                <option value="disponível">Disponível</option>
-                <option value="indisponível">Indisponível</option>
-            </select>
+            <label for="tempo" class="form-label">Tempo</label>
+            <input type="text" class="form-control" id="tempo" name="tempo" required>
         </div>
+       
         
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>   

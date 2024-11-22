@@ -2,14 +2,18 @@
 
 include 'db.php';
 
-$nome = $_POST['nome'];
-$doenca = $_POST['doenca'];
-$tratamento = $_POST['tratamento'];
+$tempo = $_POST['tempo'];  // Adicionei o ponto e vírgula aqui
+$receita = $_POST['receita'];
+$ingrediente = $_POST['ingrediente'];  // Corrigi a chave de $_POST
+$modo = $_POST['modo'];  // Corrigi a chave de $_POST
 $status_disponibilidade = $_POST['status_disponibilidade'];
 
-$query = "INSERT INTO pacientes (nome, doenca, tratamento, status_disponibilidade) 
-VALUES ('$nome', '$doenca', '$tratamento', '$status_disponibilidade')";
+// Corrigi o SQL, removendo as variáveis concatenadas na definição das colunas
+$query = "INSERT INTO Receita (receita, ingrediente, modo, status_disponibilidade, tempo) 
+VALUES ('$receita', '$ingrediente', '$modo', '$status_disponibilidade', '$tempo')";
 
 mysqli_query($conexao, $query);
 
 header('location:index.php?pagina=cadastros');
+?>
+

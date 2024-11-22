@@ -1,16 +1,18 @@
 <div class="caixa">
-    <h4>Cadastro Paciente</h4>
+    <h4>Cadastro Receitas
+        
+    </h4>
     <br>
-    <a type="button" class="btn btn-primary" href="?pagina=novoCadastro"><i class="bi bi-plus"></i> Cadastrar Paciente</a>
+    <a type="button" class="btn btn-primary" href="?pagina=novoCadastro"><i class="bi bi-plus"></i> Cadastrar Receita</a>
     <br><br><br>
     <div>
         <table id="table_id" class="cell-border">
             <thead>
                 <tr>
-                    <th>Paciente</th>
-                    <th>Doença</th>
-                    <th>Tratamento </th>
-                    <th>Medicamento</th>
+                    <th>Receita</th>
+                    <th>Ingredientes</th>
+                    <th>Modo de preparo </th>
+                    <th>Tempo</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -18,14 +20,13 @@
                 <?php
                 while ($linha = mysqli_fetch_array($consultaCadastros)) {
                     echo '<tr>';
-                    echo '<td style="word-wrap: break-word">' . $linha['nome'] . '</td>';
-                    echo '<td style="word-wrap: break-word">' . $linha['doenca'] . '</td>';
-                    echo '<td style="word-wrap: break-word">' . $linha['tratamento'] . '</td>';
-                    
-                    // Verifica o status e exibe corretamente
-                    $status = $linha['status_disponibilidade'] == 'Disponível' ? 'Disponível' : 'Indisponível';
-                    echo '<td style="word-wrap: break-word">' . $status . '</td>';
+                    echo '<td style="word-wrap: break-word">' . $linha['receita'] . '</td>';
+                    echo '<td style="word-wrap: break-word">' . $linha['ingrediente'] . '</td>';
+                    echo '<td style="word-wrap: break-word">' . $linha['modo'] . '</td>';
+                    echo '<td style="word-wrap: break-word">' . $linha['tempo'] . '</td>';
 
+                    
+                 
                     echo '<td>
                     <div class="row">
                         <div class="col-6">

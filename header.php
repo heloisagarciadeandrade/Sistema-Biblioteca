@@ -27,10 +27,10 @@
             <div class="collapse" id="navbarToggleExternalContent">
                 
                 <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Gerenciamento de doenças <span class="text-muted">Crônicas</span></h5>
+                    <h5 class="text-white h4">Gerenciamento de  <span class="text-muted">Receitas</span></h5>
                     <div>
                         <a href="?pagina=cadastros" class="linkMenu">
-                            Cadastrar pacientes
+                            Cadastrar receitas
                         </a>
                     </div>
                     <div>
