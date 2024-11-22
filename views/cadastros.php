@@ -10,7 +10,7 @@
                     <th>Paciente</th>
                     <th>Doença</th>
                     <th>Tratamento </th>
-                    <th>Status de Disponibilidade</th>
+                    <th>Medicamento</th>
                     <th>Ações</th>
                 </tr>
             </thead>

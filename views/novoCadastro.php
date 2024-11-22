@@ -1,6 +1,6 @@
 <br>
 <div class="caixa">
-    <h4>Novo Cadastro de Livro</h4>
+    <h4>Novo Cadastro de Paciente</h4>
     <br>
     <a type="button" class="btn btn-primary" href="?pagina=cadastros"><i class="bi bi-backspace"></i> Voltar</a>
     <br><br><br> 
@@ -21,10 +21,10 @@
         </div>
         
         <div class="mb-3">
-            <label for="status_disponibilidade" class="form-label">Status de Disponibilidade</label>
+            <label for="status_disponibilidade" class="form-label">Medicamento</label>
             <select class="form-control" id="status_disponibilidade" name="status_disponibilidade" required>
-                <option value="disponível">Acompanhamento</option>
-                <option value="indisponível">Sem acompanhamento</option>
+                <option value="disponível">Disponível</option>
+                <option value="indisponível">Indisponível</option>
             </select>
         </div>
         

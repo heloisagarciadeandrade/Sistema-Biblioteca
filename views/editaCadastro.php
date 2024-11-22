@@ -18,22 +18,22 @@ while ($linha = mysqli_fetch_array($consultaCadastros)) {
         <input value="<?php echo $linha['id']; ?>" type="hidden" id="id" name="id">
         
         <div class="mb-3">
-            <label for="nome" class="form-label">Título</label>
+            <label for="nome" class="form-label">Nome</label>
             <input value="<?php echo $linha['nome']; ?>" type="text" class="form-control" id="nome" name="nome" required>
         </div>
         
         <div class="mb-3">
-            <label for="doenca" class="form-label">Autor</label>
+            <label for="doenca" class="form-label">Doença</label>
             <input value="<?php echo $linha['doenca']; ?>" type="text" class="form-control" id="doenca" name="doenca" required>
         </div>
         
         <div class="mb-3">
-            <label for="tratamento" class="form-label">Gênero</label>
+            <label for="tratamento" class="form-label">Tratamento</label>
             <input value="<?php echo $linha['tratamento']; ?>" type="text" class="form-control" id="tratamento" name="tratamento" required>
         </div>
         
         <div class="mb-3">
-            <label for="status_disponibilidade" class="form-label">Status de Disponibilidade</label>
+            <label for="status_disponibilidade" class="form-label">Medicamento </label>
             <select class="form-control" id="status_disponibilidade" name="status_disponibilidade" required>
                 <option value="disponível" <?php echo ($linha['status_disponibilidade'] == 'disponível') ? 'selected' : ''; ?>>Disponível</option>
                 <option value="indisponível" <?php echo ($linha['status_disponibilidade'] == 'indisponível') ? 'selected' : ''; ?>>Indisponível</option>
